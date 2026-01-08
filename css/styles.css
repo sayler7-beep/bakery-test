@@ -173,7 +173,7 @@ ul {
 
 .section-title {
     font-size: 64px;
-    font-weight: 900;
+    font-weight: 600; /* 900 */
     line-height: 1.3;
 }
 
@@ -231,6 +231,20 @@ ul {
     content: '';
 }
 
+.chefs-list {
+    display: flex;
+    gap: 30px;
+}
+
+.chefs-item {
+    flex-basis: calc((100% - 30px) /2);
+}
+
+.chefs-card {
+    display: flex;
+    gap: 30px;
+}
+
 .chef-title {
     margin-bottom: 16px;
     font-size: 40px;
@@ -244,6 +258,12 @@ ul {
 }
 
 /* Formats-section */
+.formats-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
 .formats-list {
     display: flex;
     gap: 20px;
@@ -283,6 +303,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     width: 44px;
     height: 44px;
     padding: 0;
@@ -299,8 +320,23 @@ ul {
 }
 
 /* Contact-section */
+.contact-section {
+    padding-bottom: 96px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 30px;
+}
+
 .contact-title {
     margin-bottom: 16px;
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: none;
 }
 
 /* Footer */
